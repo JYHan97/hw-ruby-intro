@@ -14,7 +14,7 @@ After completing this assignment, you will know how to:
 * Understand the Ruby project conventions for where code files and test files are located in a project's directory hierarchy
 * Run individual tests or suites of tests using the RSpec unit testing tool
 * Understand the basic syntax of RSpec unit tests
- 
+
 Overview
 --------
 
@@ -49,7 +49,7 @@ $ cd hw-ruby-intro
 $ bundle
 ```
 
-When the above completes successfully you'll have RSpec installed and can
+When the above completes successfully you'll have installed and can
 run `rspec` from the command line to test your code.
 
 
