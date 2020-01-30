@@ -73,5 +73,22 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+  attr_accessor :isbn
+  attr_accessor :price
+  
+  def initialize(num,price)
+    if (num.empty?)
+      raise ArgumentError.new("Invalid ISBN number!")
+    elsif (price <= 0)
+      raise ArgumentError.new("Invalid Price!")
+    else
+      @isbn = num
+      @price = price
+    end
+  end
+  
+  def price_as_string
+    sprintf("$%.2f", @price)
+  end
+  
 end
