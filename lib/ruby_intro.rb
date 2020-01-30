@@ -46,15 +46,28 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  string = "Hello, "
+  string << name
+  # puts string
+  return string
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  # downcase the input string
+  dc_s = s.downcase
+  if (dc_s =~ /\A[b-df-hj-np-tv-z]/)
+    return true
+  else
+    return false
+  end
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  if (s =~ /^[01]*00$/ || s == "0")
+    return true
+  else
+    return false
+  end
 end
 
 # Part 3
